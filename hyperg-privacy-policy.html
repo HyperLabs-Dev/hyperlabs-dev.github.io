@@ -11,52 +11,54 @@
             --text-primary: #f1f5f9;
             --text-secondary: #94a3b8;
             --accent-color: #00ffa3;
+            --accent-cyan: #00f0ff;
             --border-color: #1e293b;
         }
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
             background-color: var(--bg-color);
             color: var(--text-primary);
-            line-height: 1.6;
+            line-height: 1.65;
             margin: 0;
             padding: 24px 16px;
         }
         .container {
-            max-width: 800px;
+            max-width: 840px;
             margin: 0 auto;
             background: var(--card-bg);
             border: 1px solid var(--border-color);
             border-radius: 16px;
-            padding: 32px 28px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            padding: 36px 32px;
+            box-shadow: 0 12px 35px rgba(0,0,0,0.6);
         }
         h1 {
-            color: var(--accent-color);
+            color: var(--accent-cyan);
             font-size: 28px;
-            margin-top: 0;
+            margin-top: 4px;
             margin-bottom: 8px;
+            letter-spacing: -0.5px;
         }
         .meta {
             color: var(--text-secondary);
-            font-size: 13px;
+            font-size: 13.5px;
             margin-bottom: 24px;
             border-bottom: 1px solid var(--border-color);
-            padding-bottom: 12px;
+            padding-bottom: 16px;
         }
         h2 {
             color: #ffffff;
-            font-size: 18px;
-            margin-top: 28px;
+            font-size: 19px;
+            margin-top: 32px;
             margin-bottom: 12px;
             border-left: 3px solid var(--accent-color);
-            padding-left: 10px;
+            padding-left: 12px;
         }
         p, li {
             color: var(--text-secondary);
             font-size: 14.5px;
         }
         ul {
-            padding-left: 20px;
+            padding-left: 22px;
         }
         li {
             margin-bottom: 8px;
@@ -65,7 +67,7 @@
             color: #ffffff;
         }
         a {
-            color: var(--accent-color);
+            color: var(--accent-cyan);
             text-decoration: none;
         }
         a:hover {
@@ -73,58 +75,93 @@
         }
         .badge {
             display: inline-block;
-            background: rgba(0, 255, 163, 0.12);
-            color: var(--accent-color);
-            border: 1px solid rgba(0, 255, 163, 0.3);
+            background: rgba(0, 240, 255, 0.12);
+            color: var(--accent-cyan);
+            border: 1px solid rgba(0, 240, 255, 0.3);
             border-radius: 6px;
-            padding: 3px 8px;
+            padding: 3px 10px;
             font-size: 11px;
-            font-weight: bold;
-            margin-bottom: 12px;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            margin-bottom: 10px;
+        }
+        .contact-box {
+            background: rgba(0, 255, 163, 0.05);
+            border: 1px solid rgba(0, 255, 163, 0.2);
+            border-radius: 10px;
+            padding: 16px 20px;
+            margin-top: 16px;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="badge">OFFICIAL PRIVACY POLICY</div>
+        <div class="badge">OFFICIAL PRIVACY & DATA SAFETY POLICY</div>
         <h1>Privacy Policy for HyperG</h1>
         <div class="meta">
-            <strong>Application:</strong> HyperG: Game Booster & FPS HUD<br>
-            <strong>Developer:</strong> HyperLabs-Dev<br>
-            <strong>Effective Date:</strong> October 21, 2026
+            <strong>Application:</strong> HyperG: Game Booster & FPS HUD (<code>com.hyperagboost.gamebooster</code>)<br>
+            <strong>Developer:</strong> HyperCore Labs (HyperLabs-Dev)<br>
+            <strong>Official Support:</strong> <a href="mailto:hyperlabs.dev@gmail.com">hyperlabs.dev@gmail.com</a><br>
+            <strong>Effective Date:</strong> November 6, 2026 (Updated for Google Play Compliance)
         </div>
 
-        <p>Thank you for using <strong>HyperG: Game Booster & FPS HUD</strong> ("HyperG", "we", "our", or "the app"). We are deeply committed to protecting your privacy and ensuring complete transparency regarding how our software operates on your device.</p>
+        <p>Thank you for using <strong>HyperG: Game Booster & FPS HUD</strong> ("HyperG", "we", "our", or "the app"). We are deeply committed to protecting your privacy and ensuring complete transparency regarding our data handling, system permissions, and third-party integrations in accordance with the <strong>Google Play Developer Program Policies</strong>, <strong>Google Play Data Safety Standards</strong>, <strong>COPPA</strong>, and <strong>GDPR-K</strong>.</p>
 
-        <h2>1. Zero Personal Data Collection</h2>
-        <p>HyperG is engineered as a local-first gaming optimization and telemetry tool. <strong>We do not collect, transmit, store, sell, or monetize any personal user information.</strong></p>
+        <h2>1. Zero Personal Data Collection (PII)</h2>
+        <p>HyperG is engineered strictly as a local-first gaming optimization and telemetry utility. <strong>We do not collect, transmit, store, sell, or monetize any personal user information.</strong></p>
         <ul>
-            <li>No account registration, email address, phone number, or login credentials are required.</li>
-            <li>No biometric, contact, location, SMS, or camera data is ever accessed.</li>
-            <li>All hardware telemetry calculations (CPU workload, RAM consumption, battery temperature, storage metrics) are computed exclusively on-device in temporary memory.</li>
+            <li><strong>No User Account:</strong> No registration, personal email, phone number, login credentials, or account creation is required to use HyperG.</li>
+            <li><strong>No Sensitive Personal Data:</strong> No biometric, contact, location, SMS, audio, or camera data is ever accessed, collected, or uploaded.</li>
+            <li><strong>On-Device Computing:</strong> All hardware telemetry metrics (CPU utilization, GPU workload estimates, RAM allocation, network latency/ping, battery thermals, and display refresh rates) are calculated strictly on-device in temporary volatile memory (RAM) and are never uploaded to any remote server.</li>
         </ul>
 
-        <h2>2. Permissions & Usage Disclosures</h2>
+        <h2>2. System Permissions & Purpose Disclosures</h2>
         <p>HyperG requests only the permissions strictly required to execute its system-level performance enhancements:</p>
         <ul>
-            <li><strong>Display Over Other Apps (<code>SYSTEM_ALERT_WINDOW</code>):</strong> Used solely to project the floating gaming telemetry HUD overlay (live FPS counter, CPU/GPU meters, clock, and battery stats) while you are playing games. It does not record or intercept screen contents.</li>
-            <li><strong>Foreground Service (<code>FOREGROUND_SERVICE</code>):</strong> Required to maintain background hardware telemetry without Android terminating the monitor during active gaming sessions.</li>
-            <li><strong>Kill Background Processes (<code>KILL_BACKGROUND_PROCESSES</code>):</strong> Used by the RAM Booster engine to terminate cached third-party background tasks to free physical memory for gaming.</li>
-            <li><strong>Optional Shizuku Framework:</strong> Users may optionally authorize the independent Shizuku system service (<code>uid=2000</code>) to perform privileged system cache compaction and lock the display refresh rate (120Hz/90Hz/60Hz). Shizuku commands run 100% locally on your smartphone and transmit zero data off your hardware.</li>
+            <li><strong>Display Over Other Apps (<code>android.permission.SYSTEM_ALERT_WINDOW</code>):</strong> Used solely to project the floating gaming telemetry HUD overlay (live FPS counter, CPU/GPU meters, clock, and battery stats) while you are playing games. It does not record, intercept, or capture screen contents.</li>
+            <li><strong>Foreground Service (<code>android.permission.FOREGROUND_SERVICE</code> & <code>FOREGROUND_SERVICE_SPECIAL_USE</code>):</strong> Required to maintain background hardware telemetry without Android terminating the monitor during active gaming sessions.</li>
+            <li><strong>Kill Background Processes (<code>android.permission.KILL_BACKGROUND_PROCESSES</code>):</strong> Used locally by the RAM Booster engine to terminate cached third-party background tasks to free physical memory for gaming.</li>
+            <li><strong>Optional Shizuku Framework (<code>moe.shizuku.privileged.api</code>):</strong> Users may optionally authorize the independent Shizuku system service (<code>uid=2000</code>) to perform privileged system cache compaction and lock the display refresh rate (120Hz/90Hz/60Hz). Shizuku commands run 100% locally on your smartphone under your explicit authorization and transmit zero data off your hardware.</li>
         </ul>
 
-        <h2>3. Third-Party Advertising (Google AdMob)</h2>
-        <p>To support ongoing software development, HyperG integrates <strong>Google AdMob</strong> to display non-intrusive advertisements (such as banner ads and occasional game launch interstitials). Google AdMob may process non-personally identifiable diagnostic and advertising identifiers (such as the Google Advertising ID) in strict accordance with <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy & Terms</a>.</p>
+        <h2>3. TrueFrame™ & MediaProjection Privacy Guarantee</h2>
+        <p>When the TrueFrame™ GPU pacing calibration is active:</p>
+        <ul>
+            <li><strong>On-Device Pacing:</strong> Android MediaProjection is used exclusively on-device to measure frame delivery timestamps and frame presentation intervals.</li>
+            <li><strong>Strict Privacy Guarantee:</strong> Zero video recording, zero audio capture, zero screenshot saving, zero storage to disk, and zero network transmission.</li>
+            <li><strong>Real-Time Disposal:</strong> Visual frame buffers are processed transiently in volatile RAM and immediately discarded.</li>
+        </ul>
 
-        <h2>4. Children's Online Privacy (COPPA Compliance)</h2>
-        <p>HyperG does not address anyone under the age of 13. We do not knowingly collect or solicit personally identifiable information from children.</p>
+        <h2>4. Third-Party Services & Google Play Compliance</h2>
+        <p>To support ongoing software development, HyperG integrates standard verified Google libraries:</p>
+        <ul>
+            <li><strong>Google AdMob (<code>play-services-ads</code>):</strong> Displays non-intrusive banner advertisements. Google AdMob may process non-personal device identifiers (including the Google Advertising ID / <code>AD_ID</code>), IP address, and ad interaction metrics in strict accordance with <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy & Terms</a>. We do not associate advertising IDs with any personal user identity.</li>
+            <li><strong>Firebase Crashlytics & Analytics (<code>firebase-crashlytics</code>):</strong> Collects anonymized crash logs, stack traces, device hardware models, and OS build versions to detect cold-boot crashes and ensure stability across diverse devices. No personally identifiable data is collected or stored.</li>
+            <li><strong>Google Play In-App Billing (<code>com.android.vending.BILLING</code>):</strong> Optional VIP upgrades are handled entirely and securely through Google Play Billing. HyperG never accesses, collects, or stores payment credentials, credit card numbers, or banking details.</li>
+        </ul>
 
-        <h2>5. Trademark & Affiliation Disclaimer</h2>
-        <p><strong>"HyperG: Game Booster & FPS HUD"</strong> is an independent performance tool developed by HyperLabs-Dev. It is not affiliated with, authorized, endorsed by, or in any way officially connected with any other games, hardware manufacturers, or registered trademarks.</p>
+        <h2>5. Data Retention & User Data Deletion Rights</h2>
+        <p>In full compliance with Google Play's User Data policy:</p>
+        <ul>
+            <li><strong>Retention Policy:</strong> Because HyperG operates without cloud databases and maintains no user accounts, we retain no personal user data on external servers.</li>
+            <li><strong>Deletion Mechanism:</strong> You have complete control over all data stored locally on your device. You can immediately delete all local app preferences, customizer settings, and benchmark histories at any time by clearing application data via:<br>
+            <code>Android Settings &gt; Apps &gt; HyperG &gt; Storage &gt; Clear Storage / Clear Data</code><br>
+            or by uninstalling the application from your device.</li>
+        </ul>
 
-        <h2>6. Developer Contact</h2>
-        <p>If you have any questions or feedback regarding this Privacy Policy, please contact our development team via GitHub:</p>
-        <p><a href="https://github.com/HyperLabs-Dev" target="_blank" rel="noopener">https://github.com/HyperLabs-Dev</a></p>
+        <h2>6. Children's Online Privacy (COPPA & GDPR-K Compliance)</h2>
+        <p>HyperG does not address or target anyone under the age of 13 (or under 16 in the European Union). We do not knowingly collect or solicit personally identifiable information from children.</p>
+
+        <h2>7. Trademark & Affiliation Disclaimer</h2>
+        <p><strong>"HyperG: Game Booster & FPS HUD"</strong> is an independent performance tool developed by HyperCore Labs (HyperLabs-Dev). It is not affiliated with, authorized, endorsed by, or in any way officially connected with any other games, hardware manufacturers, or registered trademarks.</p>
+
+        <h2>8. Developer Contact & Official Support</h2>
+        <p>For any questions, feedback, or inquiries regarding this Privacy Policy or your data, please contact our engineering team:</p>
+        <div class="contact-box">
+            <p><strong>Official Support Email:</strong> <a href="mailto:hyperlabs.dev@gmail.com">hyperlabs.dev@gmail.com</a></p>
+            <p><strong>Developer Entity:</strong> HyperCore Labs (HyperLabs-Dev)</p>
+            <p><strong>GitHub Repository:</strong> <a href="https://github.com/Harsh10er/HyperGBoost" target="_blank" rel="noopener">https://github.com/Harsh10er/HyperGBoost</a></p>
+        </div>
     </div>
 </body>
 </html>
