@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy - HyperG: Game Booster & FPS HUD</title>
+    <title>Privacy Policy - HyperG: FPS Meter &amp; Game Space</title>
     <style>
         :root {
             --bg-color: #0b0f19;
@@ -96,69 +96,67 @@
 </head>
 <body>
     <div class="container">
-        <div class="badge">OFFICIAL PRIVACY & DATA SAFETY POLICY</div>
+        <div class="badge">OFFICIAL PRIVACY &amp; DATA SAFETY POLICY</div>
         <h1>Privacy Policy for HyperG</h1>
         <div class="meta">
-            <strong>Application:</strong> HyperG: Game Booster & FPS HUD (<code>com.hyperagboost.gamebooster</code>)<br>
+            <strong>Application:</strong> HyperG: FPS Meter &amp; Game Space (<code>com.hyperagboost.gamebooster</code>)<br>
             <strong>Developer:</strong> HyperCore Labs (HyperLabs-Dev)<br>
-            <strong>Official Support:</strong> <a href="mailto:hyperlabs.dev@gmail.com">hyperlabs.dev@gmail.com</a><br>
-            <strong>Effective Date:</strong> November 6, 2026 (Updated for Google Play Compliance)
+            <strong>Official Support:</strong> <a href="mailto:Hyperlabs.dev@gmail.com">Hyperlabs.dev@gmail.com</a><br>
+            <strong>Effective Date:</strong> November 6, 2026<br>
+            <strong>Last Updated:</strong> November 26, 2026
         </div>
 
-        <p>Thank you for using <strong>HyperG: Game Booster & FPS HUD</strong> ("HyperG", "we", "our", or "the app"). We are deeply committed to protecting your privacy and ensuring complete transparency regarding our data handling, system permissions, and third-party integrations in accordance with the <strong>Google Play Developer Program Policies</strong>, <strong>Google Play Data Safety Standards</strong>, <strong>COPPA</strong>, and <strong>GDPR-K</strong>.</p>
+        <p>Thank you for using <strong>HyperG: FPS Meter &amp; Game Space</strong> ("HyperG", "we", "our", or "the app"). This Privacy Policy explains how local hardware telemetry, permissions, and integrated third-party SDKs operate in accordance with <strong>Google Play Developer Program Policies</strong>, <strong>Google Play Data Safety Standards</strong>, <strong>COPPA</strong>, and <strong>GDPR-K</strong>.</p>
 
-        <h2>1. Zero Personal Data Collection (PII)</h2>
-        <p>HyperG is engineered strictly as a local-first gaming optimization and telemetry utility. <strong>We do not collect, transmit, store, sell, or monetize any personal user information.</strong></p>
+        <h2>1. Local Telemetry &amp; HyperG Heuristic Engine</h2>
+        <p>HyperG is built as an account-free system telemetry utility and Game Space overlay:</p>
         <ul>
-            <li><strong>No User Account:</strong> No registration, personal email, phone number, login credentials, or account creation is required to use HyperG.</li>
-            <li><strong>No Sensitive Personal Data:</strong> No biometric, contact, location, SMS, audio, or camera data is ever accessed, collected, or uploaded.</li>
-            <li><strong>On-Device Computing:</strong> All hardware telemetry metrics (CPU utilization, GPU workload estimates, RAM allocation, network latency/ping, battery thermals, and display refresh rates) are calculated strictly on-device in temporary volatile memory (RAM) and are never uploaded to any remote server.</li>
+            <li><strong>On-Device Telemetry:</strong> CPU, GPU, RAM, network throughput/ping, display refresh rate, and battery thermal metrics are read and computed locally on-device in volatile RAM and are not uploaded by HyperCore Labs.</li>
+            <li><strong>Heuristic Estimation Disclaimer:</strong> On non-rooted devices or environments where Android OS / SELinux restricts direct access to certain hardware kernel nodes (such as GPU busy sysfs counters), some telemetry readings (such as GPU <code>Est. Workload</code> / <code>~XX%</code> values) are predictions or estimates calculated locally by the <strong>HyperG Heuristic Engine</strong> from readable CPU utilization, core frequency scaling, and thermal signals rather than raw hardware counters. Readings are shown as <code>N/A</code> when underlying system sensors are unavailable.</li>
+            <li><strong>Account-Free Use:</strong> HyperG requires no sign-in and does not collect your name, personal email address, phone number, contacts, biometrics, or precise GPS location.</li>
         </ul>
 
-        <h2>2. System Permissions & Purpose Disclosures</h2>
-        <p>HyperG requests only the permissions strictly required to execute its system-level performance enhancements:</p>
+        <h2>2. System Permissions &amp; Purpose</h2>
+        <p>HyperG requests only the permissions strictly necessary for real-time HUD telemetry and session reporting:</p>
         <ul>
-            <li><strong>Display Over Other Apps (<code>android.permission.SYSTEM_ALERT_WINDOW</code>):</strong> Used solely to project the floating gaming telemetry HUD overlay (live FPS counter, CPU/GPU meters, clock, and battery stats) while you are playing games. It does not record, intercept, or capture screen contents.</li>
-            <li><strong>Foreground Service (<code>android.permission.FOREGROUND_SERVICE</code> & <code>FOREGROUND_SERVICE_SPECIAL_USE</code>):</strong> Required to maintain background hardware telemetry without Android terminating the monitor during active gaming sessions.</li>
-            <li><strong>Kill Background Processes (<code>android.permission.KILL_BACKGROUND_PROCESSES</code>):</strong> Used locally by the RAM Booster engine to terminate cached third-party background tasks to free physical memory for gaming.</li>
-            <li><strong>Optional Shizuku Framework (<code>moe.shizuku.privileged.api</code>):</strong> Users may optionally authorize the independent Shizuku system service (<code>uid=2000</code>) to perform privileged system cache compaction and lock the display refresh rate (120Hz/90Hz/60Hz). Shizuku commands run 100% locally on your smartphone under your explicit authorization and transmit zero data off your hardware.</li>
+            <li><strong>Display Over Other Apps (<code>android.permission.SYSTEM_ALERT_WINDOW</code>):</strong> Used solely to project the floating FPS HUD and Esports Crosshair Reticle over your games. It does not intercept user input or capture private screen content.</li>
+            <li><strong>TrueFrame&trade; Screen Capture &amp; Foreground Service (<code>FOREGROUND_SERVICE_MEDIA_PROJECTION</code> &amp; <code>FOREGROUND_SERVICE_SPECIAL_USE</code>):</strong> Maintains the active telemetry overlay and processes on-device frame presentation intervals transiently in volatile RAM to measure rendered FPS.</li>
+            <li><strong>Notifications (<code>android.permission.POST_NOTIFICATIONS</code>):</strong> Displays the active foreground HUD notification and session benchmark summary alerts while gaming.</li>
+            <li><strong>Usage Access (<code>android.permission.PACKAGE_USAGE_STATS</code>):</strong> Optional permission used strictly on-device to identify the active foreground game package during Game Space benchmark sessions.</li>
         </ul>
 
-        <h2>3. TrueFrame™ & MediaProjection Privacy Guarantee</h2>
-        <p>When the TrueFrame™ GPU pacing calibration is active:</p>
+        <h2>3. TrueFrame&trade; &amp; MediaProjection Privacy</h2>
+        <p>When TrueFrame&trade; FPS measurement is active:</p>
         <ul>
-            <li><strong>On-Device Pacing:</strong> Android MediaProjection is used exclusively on-device to measure frame delivery timestamps and frame presentation intervals.</li>
-            <li><strong>Strict Privacy Guarantee:</strong> Zero video recording, zero audio capture, zero screenshot saving, zero storage to disk, and zero network transmission.</li>
-            <li><strong>Real-Time Disposal:</strong> Visual frame buffers are processed transiently in volatile RAM and immediately discarded.</li>
+            <li><strong>Local Calculation Only:</strong> Android MediaProjection is used exclusively on-device to measure frame presentation intervals and frame delivery timestamps.</li>
+            <li><strong>Strict Privacy Guarantee:</strong> No video recording, audio capture, screenshot saving, disk storage, or network transmission of screen frames occurs.</li>
+            <li><strong>Real-Time Discard:</strong> Frame buffers are processed transiently in volatile RAM and immediately discarded.</li>
         </ul>
 
-        <h2>4. Third-Party Services & Google Play Compliance</h2>
-        <p>To support ongoing software development, HyperG integrates standard verified Google libraries:</p>
+        <h2>4. Advertising, Mediation &amp; Analytics (Data Safety)</h2>
+        <p>Consistent with HyperG's Google Play Data Safety declarations, integrated third-party Google and ad mediation SDKs process limited technical data:</p>
         <ul>
-            <li><strong>Google AdMob (<code>play-services-ads</code>):</strong> Displays non-intrusive banner advertisements. Google AdMob may process non-personal device identifiers (including the Google Advertising ID / <code>AD_ID</code>), IP address, and ad interaction metrics in strict accordance with <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy & Terms</a>. We do not associate advertising IDs with any personal user identity.</li>
-            <li><strong>Firebase Crashlytics & Analytics (<code>firebase-crashlytics</code>):</strong> Collects anonymized crash logs, stack traces, device hardware models, and OS build versions to detect cold-boot crashes and ensure stability across diverse devices. No personally identifiable data is collected or stored.</li>
-            <li><strong>100% Free Utility:</strong> HyperG is completely free to download and operate with zero in-app purchases or paid subscriptions required.</li>
+            <li><strong>Google AdMob &amp; Mediation Partners (Unity Ads):</strong> Displays banner, app-open, interstitial, and opt-in rewarded video ads. These ad SDKs may process device or advertising identifiers (<code>AD_ID</code> / App Set ID), coarse IP-based location, ad interaction events, and diagnostic performance data in accordance with <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a> and your regional Google UMP (GDPR/UK) consent settings.</li>
+            <li><strong>Firebase Analytics &amp; Crashlytics:</strong> Collects crash traces, stability diagnostics, and aggregated feature telemetry events to detect issues and improve reliability across Android devices.</li>
+            <li><strong>Free App Experience:</strong> Core HUD, TrueFrame&trade; telemetry, Device Specs, and Classic Gap Crosshair features are free, alongside optional opt-in rewarded video unlocks for extra themes and reticle customization, with no in-app purchases or subscriptions.</li>
         </ul>
 
-        <h2>5. Data Retention & User Data Deletion Rights</h2>
-        <p>In full compliance with Google Play's User Data policy:</p>
+        <h2>5. Data Retention &amp; Deletion Rights</h2>
         <ul>
-            <li><strong>Retention Policy:</strong> Because HyperG operates without cloud databases and maintains no user accounts, we retain no personal user data on external servers.</li>
-            <li><strong>Deletion Mechanism:</strong> You have complete control over all data stored locally on your device. You can immediately delete all local app preferences, customizer settings, and benchmark histories at any time by clearing application data via:<br>
-            <code>Android Settings &gt; Apps &gt; HyperG &gt; Storage &gt; Clear Storage / Clear Data</code><br>
-            or by uninstalling the application from your device.</li>
+            <li><strong>Local Storage Control:</strong> HyperG stores user preferences, theme selections, and session benchmark logs locally on your device without external user accounts.</li>
+            <li><strong>User Deletion Mechanism:</strong> You can immediately erase all locally stored preferences and benchmark histories via Android Settings (<code>Settings &gt; Apps &gt; HyperG &gt; Storage &gt; Clear Storage</code>) or by uninstalling the app, and manage ad personalization via Android Ad Privacy settings or in-app Manage Ad Privacy (UMP).</li>
         </ul>
 
-        <h2>6. Children's Online Privacy (COPPA & GDPR-K Compliance)</h2>
-        <p>HyperG does not address or target anyone under the age of 13 (or under 16 in the European Union). We do not knowingly collect or solicit personally identifiable information from children.</p>
+        <h2>6. Children's Online Privacy (COPPA &amp; GDPR-K)</h2>
+        <p>HyperG does not address or target anyone under the age of 13 (or under 16 in the European Union). We do not knowingly collect or solicit any personal information from children.</p>
 
-        <h2>7. Trademark & Affiliation Disclaimer</h2>
-        <p><strong>"HyperG: Game Booster & FPS HUD"</strong> is an independent performance tool developed by HyperCore Labs (HyperLabs-Dev). It is not affiliated with, authorized, endorsed by, or in any way officially connected with any other games, hardware manufacturers, or registered trademarks.</p>
+        <h2>7. Trademark &amp; Affiliation Disclaimer</h2>
+        <p><strong>"HyperG: FPS Meter &amp; Game Space"</strong> is an independent utility developed by HyperCore Labs (HyperLabs-Dev). It is not affiliated with, authorized, endorsed by, or officially connected with any game publishers, hardware manufacturers, or third-party trademarks.</p>
 
-        <h2>8. Developer Contact & Official Support</h2>
-        <p>For any questions, feedback, or inquiries regarding this Privacy Policy or your data, please contact our engineering team:</p>
+        <h2>8. Developer Contact &amp; Official Support</h2>
+        <p>For any questions, feedback, or inquiries regarding this Privacy Policy or your data, reach out directly to our engineering team:</p>
         <div class="contact-box">
-            <p><strong>Official Support Email:</strong> <a href="mailto:hyperlabs.dev@gmail.com">hyperlabs.dev@gmail.com</a></p>
+            <p><strong>Official Support Email:</strong> <a href="mailto:Hyperlabs.dev@gmail.com">Hyperlabs.dev@gmail.com</a></p>
             <p><strong>Developer Entity:</strong> HyperCore Labs (HyperLabs-Dev)</p>
         </div>
     </div>
